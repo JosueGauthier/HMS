@@ -12,7 +12,7 @@ entity up_dn_counter_top is
            D : in STD_LOGIC_VECTOR(n-1 downto 0); -- seting input
            -- outputs
            Q : out  STD_LOGIC_VECTOR (n-1 downto 0); -- counter
-           ovrflow : out  STD_LOGIC);    -- OVERFLOW
+           overflow : out  STD_LOGIC);    -- OVERFLOW
 end up_dn_counter_top;
 
 
@@ -64,7 +64,7 @@ begin
         end if;
 
         Q <= std_logic_vector(count);
-        ovrflow <= of_var;
+        overflow <= of_var;
     end process;
         
 end Behavioral;
