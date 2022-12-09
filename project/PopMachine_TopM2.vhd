@@ -137,12 +137,12 @@ BEGIN
     PORT MAP(
         clk=>clk,
         rst=>clr, --! ??
-        SS0=>,
-        SS1=>,
+        SS0=>Q__SS0,
+        SS1=>sum__SS1_D,
         SS2=>price,
-        SS3=>,
-        SS4=>,
-        SS5=>,
+        SS3=>current_state__SS3,
+        SS4=>, --! ?
+        SS5=>, --! ?
         Sel=>,
         SSO=>,
 
