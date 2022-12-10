@@ -100,6 +100,7 @@ BEGIN
         coin_sensor <= "10";
         WAIT FOR 30 * clock_period;
         coin_sensor <= "11";
+    
         WAIT FOR 30 * clock_period;
         clr <= '1';
         WAIT FOR 30 * clock_period;
